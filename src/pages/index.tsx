@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import { Head } from 'next/document';
 import { useState, useEffect } from 'react';
 type Message = {
   id: number;
@@ -38,7 +38,7 @@ export default function Home() {
       <Head>
         <title>Text Sharing App - Team X</title>
       </Head>
-      <h1 class="mb-4 text-4xl font-extrabold text-center leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">Welcome to the in-Team-X text sharing app</h1>
+      <h1 className="mb-4 text-4xl font-extrabold text-center leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl ">Welcome to the in-Team-X text sharing app</h1>
 
       <form onSubmit={handleSubmit} className="mb-8">
         <div className="mb-4">
