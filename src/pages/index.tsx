@@ -1,4 +1,3 @@
-import { Head } from 'next/document';
 import { useState, useEffect } from 'react';
 type Message = {
   id: number;
